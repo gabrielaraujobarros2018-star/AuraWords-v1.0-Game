@@ -86,13 +86,16 @@ Compile into a single `.img` binary:
 
 ```bash
 g++ *.cpp -O2 -static -o AuraWords.img
+```
 
 ---
 
 ## installation path (PalisadeOS)
 
+```
 /palisade/os/framework/framework.Apps/
 programIMPORTS.Custom/adminApps/
+```
 
 Once placed, the OS will recognize Aura Words as a valid native application.
 
