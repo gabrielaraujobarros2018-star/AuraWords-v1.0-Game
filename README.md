@@ -1,6 +1,6 @@
 # Aura Words
 
-**Aura Words** is a minimal, system-native C++ game designed to run as a first-class application on **PalisadeOS**.  
+**Aura Words** is a minimal, system-native C++ game designed to run as a first-class application on **Lumen**.  
 The game focuses on emotional balance mechanics using positive and negative words interacting with a player entity.
 
 This project intentionally uses a **small directory tree**, no external assets, and local persistence to stay lightweight, auditable, and OS-friendly.
@@ -47,21 +47,21 @@ Guilt, Pain, Noise, Loss, Shadow, Rage
 
 ---
 
-## PalisadeOS Compatibility
+## Lumen Compatibility
 
-Aura Words includes native compatibility layers for PalisadeOS:
+Aura Words includes native compatibility layers for Lumen:
 
-### PalisadeManifest
+### LumenManifest
 - Registers the app as a trusted **adminApp**
 - Declares permissions and install path
 - Provides OS-level identity
 
-### PalisadeRuntime
-- Hooks into PalisadeOS lifecycle
+### UltiateRT
+- Hooks into Lumen lifecycle
 - Supports init, run, pause, resume, shutdown
 - Prevents unsafe execution states
 
-### PalisadeStorage
+### LumenStorage
 - Sandboxed persistent storage
 - Safe local save handling
 - Survives OS restarts
@@ -76,7 +76,7 @@ Saved data includes:
 - Positive Aura
 - Negative Aura
 
-Persistence is handled safely under PalisadeOS-approved directories.
+Persistence is handled safely under Lumen-approved directories.
 
 ---
 
@@ -90,11 +90,10 @@ g++ *.cpp -O2 -static -o AuraWords.img
 
 ---
 
-## installation path (PalisadeOS)
+## installation path (Lumen)
 
 ```
-/palisade/os/framework/framework.Apps/
-programIMPORTS.Custom/adminApps/
+/storage/emulated/0/lumen/lumen/lumen-src-fullsrc/sysmain/os/system/programs/apps/pUser/aurawords_game
 ```
 
 Once placed, the OS will recognize Aura Words as a valid native application.
@@ -107,4 +106,4 @@ Once placed, the OS will recognize Aura Words as a valid native application.
 - Emotion-driven mechanics
 - No unnecessary abstractions
 - Built to be extended without refactoring
-- Aura Words is not a demo — it is a **complete, native PalisadeOS** game designed for clarity, stability, and expansion.
+- Aura Words is not a demo — it is a **complete, native Lumen** game designed for clarity, stability, and expansion.
